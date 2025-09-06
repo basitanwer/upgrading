@@ -55,6 +55,12 @@
         background-color: #374151;
       }
     </style>
+    <script>
+      // Redirect any non-root path to the main page
+      if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+        window.location.replace('/');
+      }
+    </script>
   </head>
   <body>
     <div class="logo">
